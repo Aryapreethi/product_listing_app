@@ -18,6 +18,9 @@ jobs:
         with:
           flutter-version: '3.38.5'
 
+      - name: Remove Gradle cache
+        run: rm -rf ~/.gradle/caches/
+
       - name: Install dependencies
         run: flutter pub get
 
